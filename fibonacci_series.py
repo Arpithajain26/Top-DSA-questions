@@ -6,3 +6,8 @@ def fibonaaci_series(num):
     else:
         return fibonaaci_series(num-1)+fibonaaci_series(num-2)
     
+def fibonaaci(n):
+    for i in range(n):
+        print(fibonaaci_series(i),end=" ")
+    return
+fibonaaci(4)
