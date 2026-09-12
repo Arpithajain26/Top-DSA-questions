@@ -37,14 +37,14 @@ def pattern6(n):
         for j in range(n,i,-1):
             print("*",end=" ")
         print()
-pattern6(4)
+# pattern6(4)
 def pattern7(n):
     for i in range(n,-1,-1):
         for j in range(2*i-1):
             print("*",end=" ")
         print()
     return
-pattern7(4)
+# pattern7(4)
 def pattern8(n):
     for i in range(1,n+1):
         for j in range(n-i):
@@ -56,7 +56,7 @@ def pattern8(n):
         print()
 
     return
-pattern8(4)
+# pattern8(4)
 def pattern9(n):
     for i in range(1,n+1):
         for j in range(n-i,0,-1):
@@ -65,7 +65,17 @@ def pattern9(n):
             print("*",end=" ")
         print()
     return
-pattern9(4)
+# pattern9(4)
+def pattern10(n):
+    for i in range(n):
+        for j in range(i):
+            print("-",end=" ")
+        for j in range(n-i,0,-1):
+            print("*",end=" ")
+        
+        print()
+    return
+pattern10(4)
 
 
 
