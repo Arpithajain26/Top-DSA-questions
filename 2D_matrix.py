@@ -1,8 +1,8 @@
-def set_2D_matrix(matrix):
+def set_matrix_zeroes(matrix):
     n=len(matrix)
     m=len(matrix[0])
-    row=[0]*n
     col=[0]*m
+    row=[0]*n
     for i in range(n):
         for j in range(m):
             if matrix[i][j]==0:
@@ -13,4 +13,4 @@ def set_2D_matrix(matrix):
             if row[i] or col[j]:
                 matrix[i][j]=0
     return matrix
-print(set_2D_matrix([[1,1,1],[1,0,1],[1,1,1]])) 
+print(set_matrix_zeroes([[1,1,1],[1,0,1],[1,1,1]]))
