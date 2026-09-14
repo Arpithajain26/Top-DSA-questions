@@ -20,8 +20,9 @@ Input: 123
 Output: Not an Armstrong Number"""
 def check_armstrong_number(n):
     sum=0
-    for i in str(n):
-        sum+=int(i)**3
+    digits=str(n)
+    for i in digits:
+        sum+=int(i)**len(str(n))
     if sum==n:
         return True
     return False
