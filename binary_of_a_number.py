@@ -41,11 +41,11 @@ def binary_number(num):
     return bin(num)[2:]
 print(binary_number(3))
 """another technique"""
-def binary_number1(num):
+def binary_number(num):
     result=""
     while num>0:
         rem=num%2
         result=str(rem)+result
-        num=num//2
+        num//=2
     return result
-print(binary_number1(3))
+print(binary_number(3))
