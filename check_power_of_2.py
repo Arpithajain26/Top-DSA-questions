@@ -26,4 +26,11 @@ def check_power_of_2(num):
     return "false"
 print(check_power_of_2(4))
 print(check_power_of_2(7))
+
+# another method
+def check_power_of_2(num):
+    if num>0 and (num & (num-1)==0):
+        return "true"
+    return "false"
+print(check_power_of_2(2))
         
