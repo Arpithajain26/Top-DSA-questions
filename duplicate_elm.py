@@ -33,3 +33,7 @@ def duplicate_element(nums):
         list1.append(i)
     return False
 print(duplicate_element([1,1,1,2,3]))
+# another approach
+def duplicates(nums):
+    return len(nums)!=len(set(nums))
+print(duplicates([1,1,1,3,3]))
