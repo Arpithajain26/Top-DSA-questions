@@ -55,6 +55,7 @@ Output:
 [30, 40, 50, 10, 20]
 """
 def right_rotation(arr,k):
+    k=k%len(arr)
     arr[:]=reversed(arr[:])
     arr[:k]=reversed(arr[:k])
     arr[k:]=reversed(arr[k:])
