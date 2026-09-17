@@ -3,4 +3,4 @@ def linear_search(nums,k):
         if i==k:
             return i
     return -1
-print(linear_search([1,2,3,4,5,6],9))
+print(linear_search([1,2,3,4,5,6],3))
