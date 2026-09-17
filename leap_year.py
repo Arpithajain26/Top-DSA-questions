@@ -5,3 +5,7 @@ def leap_year(year):
         print("not leap year")
 leap_year(1996)
 leap_year(1997)
+def leap_year(year):
+    if year%400==0 or (year%4==0 and year%100!=0):
+        return True
+    return False

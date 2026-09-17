@@ -19,3 +19,15 @@ def prime_numbers(a,b):
             list1.append(i)
     return list1
 print(prime_numbers(1,100))
+
+
+
+"""other solution to check whether a number is prime or not"""
+def check_prime(n):
+    if n<2:
+        return 0
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return False
+    return True
+print(check_prime(8))
