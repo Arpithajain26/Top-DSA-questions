@@ -31,9 +31,10 @@ def max_subarray(nums):
     max_sum=0
     for i in range(len(nums)):
         sum+=nums[i]
+        max_sum=max(max_sum,sum)
         if sum<0:
             sum=0
-        max_sum=max(max_sum,sum)
+            
     
     return max_sum
 print(max_subarray([5,4,-1,7,8]))
