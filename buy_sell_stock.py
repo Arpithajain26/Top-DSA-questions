@@ -28,10 +28,10 @@ The stock price keeps decreasing, so no profit can be made.
 Expected approach: Use a single pass / two-pointer approach with O(n) time complexity and O(1) space complexity."""
 def buy_sell_stock(nums):
     profit=0
-    minimum=nums[0]
-    for i in nums:
-        cost=i-minimum
+    mini=nums[0]
+    for i in range(len(nums)):
+        cost=nums[i]-mini
         profit=max(profit,cost)
-        minimum=min(minimum,i)
+        mini=min(mini,nums[i])
     return profit
 print(buy_sell_stock([7, 1, 5, 3, 6, 4]))
