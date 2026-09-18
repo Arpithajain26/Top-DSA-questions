@@ -28,10 +28,14 @@ Output: Not a Perfect Number
 
 Your task: Write the function:"""
 def perfect_number(n):
-    sum_n=0
-    for i in range(1,n):
+    sum_n=1
+    if n==1:
+        return False
+    for i in range(2,int(n**0.5)+1):
         if n%i==0:
             sum_n+=i
+            if i!=n//i:
+                sum_n+=n//i
     return sum_n==n
 print(perfect_number(28))
 print(perfect_number(12))
