@@ -49,3 +49,11 @@ def binary_number(num):
         num//=2
     return result
 print(binary_number(3))
+def binary_number1(num):
+    result=""
+    while num>0:
+        rem=num%2
+        result+=str(rem)
+        num=num//2
+    return result
+print(binary_number1(3))
