@@ -26,3 +26,13 @@ def find_first_unique_char(s):
             return i
     return -1
 print(find_first_unique_char("leetcode"))
+
+def find_first_unique(s):
+    mpp={}
+    for i in s:
+        mpp[i]=mpp.get(i,0)+1
+    for i in range(len(s)):
+        if mpp[s[i]]==1:
+            return i
+    return -1
+print(find_first_unique("loveleetcode"))
