@@ -41,3 +41,9 @@ def check_rotation(s1,s2):
     return False
     
 print(check_rotation("abcd","cdab"))
+def check_rotation1(s1,s2):
+    x=s1+s2
+    if s1 in x:
+        return True
+    return False
+print(check_rotation1("abcd","cdab"))
