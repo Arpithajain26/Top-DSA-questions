@@ -31,3 +31,11 @@ def check_armstrong_number(n):
         
 print(check_armstrong_number(153))
 print(check_armstrong_number(123))
+def check_anargam1(n):
+    digit=str(n)
+    sum=0
+    for i in digit:
+        sum+=int(i)**len(digit)
+    return sum==n
+print(check_anargam1(153))
+        
