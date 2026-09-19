@@ -37,3 +37,6 @@ print(duplicate_element([1,1,1,2,3]))
 def duplicates(nums):
     return len(nums)!=len(set(nums))
 print(duplicates([1,1,1,3,3]))
+def duplicates1(nums):
+    return len(nums)!=len(set(nums))
+print(duplicates1([1,2,3,4,5,6,1]))
