@@ -33,4 +33,10 @@ def check_power_of_2(num):
         return "true"
     return "false"
 print(check_power_of_2(2))
+def check_power_of(num):
+    if num>0 and (num&(num-1)==0):
+        return True
+    else:
+        return False
+print(check_power_of(4))
         
