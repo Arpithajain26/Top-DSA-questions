@@ -30,3 +30,11 @@ def find_unique_elm(nums):
     return nums[-1]
 print(find_unique_elm([4,1,2,1,2]))
 
+def find_unique_element(nums):
+    nums.sort()
+    for i in range(0,len(nums)-2,2):
+        if nums[i]!=nums[i+1]:
+            return nums[i]
+    return nums[-1]
+print(find_unique_element([4,1,2,1,2]))
+
