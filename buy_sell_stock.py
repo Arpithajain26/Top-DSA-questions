@@ -35,3 +35,12 @@ def buy_sell_stock(nums):
         mini=min(mini,nums[i])
     return profit
 print(buy_sell_stock([7, 1, 5, 3, 6, 4]))
+def buy_sell_stock1(nums):
+    profit=0
+    minimum=nums[0]
+    for i in range(len(nums)):
+        cost=nums[i]-minimum
+        profit=max(profit,cost)
+        minimum=min(minimum,nums[i])
+    return profit
+print(buy_sell_stock1([7,1,5,3,6,4]))
