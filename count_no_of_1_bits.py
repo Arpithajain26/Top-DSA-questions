@@ -31,3 +31,10 @@ def count_bits(n):
         count+=1
     return count
 print(count_bits(3))
+def count_bits1(n):
+    count=0
+    while n:
+        n=n&(n-1)
+        count+=1
+    return count
+print(count_bits1(3))
