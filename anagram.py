@@ -54,3 +54,6 @@ def check_anargam(s1,s2):
         mpp2[j]=mpp2.get(j,0)+1
     return mpp1==mpp2
 print(check_anargam("listen","silent"))
+def check_anargam1(s1,s2):
+    return Counter(s1)==Counter(s2)
+print(check_anargam1("silent","listen"))
