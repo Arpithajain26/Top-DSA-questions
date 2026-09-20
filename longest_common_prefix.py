@@ -22,3 +22,11 @@ def longest_common_prefix(s):
                 return word[0:i]
     return word
 print(longest_common_prefix(["flower","flow","flight"]))
+def longest_common_prefic(s):
+    words=s[0]
+    for i in range(len(words)):
+        for ch in s[1:]:
+            if i==len(ch) or words[i]!=ch[i]:
+                return words[0:i]
+    return words
+print(longest_common_prefic(["flower","flow","flight"]))
