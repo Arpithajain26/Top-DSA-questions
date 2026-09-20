@@ -17,3 +17,6 @@ def reverse_string(s):
     return s[::-1]
 print(reverse_string("hello"))
 print(reverse_string("python"))
+def reverse_string(s):
+    return s[::-1]
+print(reverse_string("arpitha"))
