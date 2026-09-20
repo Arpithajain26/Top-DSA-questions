@@ -61,3 +61,10 @@ def right_rotation(arr,k):
     arr[k:]=reversed(arr[k:])
     return arr
 print(right_rotation([10,20,30,40,50],3))
+def left_rotate1(arr,k):
+    k=k%len(arr)
+    arr[:k]=reversed(arr[:k])
+    arr[k:]=reversed(arr[k:])
+    arr[:]=reversed(arr[:])
+    return arr
+print(left_rotate1([10, 20, 30, 40, 50],3))
