@@ -6,17 +6,15 @@ class ListNode:
 
 class Solution:
     def reverseList(self, head):
-        """temp=head
+        temp=head
         prev=None
         while temp:
             front=temp.next 
             temp.next=prev
-            prev=temp 
+            prev=temp
             temp=front
-        return prev"""
-        # optimal one another is using stack
-
-
+        return prev
+"""
         stack=[]
         temp=head
         while temp:
@@ -31,7 +29,7 @@ class Solution:
             temp=temp.next
             
         temp.next=None 
-        return head
+        return head"""
 
     
 
