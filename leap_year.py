@@ -9,3 +9,8 @@ def leap_year(year):
     if year%400==0 or (year%4==0 and year%100!=0):
         return True
     return False
+def leap_year(year):
+    if year%400==0 or (year%4==0 and year%100!=0):
+        return "leap"
+    return "not leap"
+print(leap_year(2000))
