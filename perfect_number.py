@@ -39,4 +39,15 @@ def perfect_number(n):
     return sum_n==n
 print(perfect_number(28))
 print(perfect_number(12))
+def perfect_number(n):
+    sum_n=1
+    if n==1:
+        return False
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            sum_n+=i
+            if i!=n//i:
+                sum_n+=n//i
+    return sum_n==n
+print(perfect_number(28))
     
