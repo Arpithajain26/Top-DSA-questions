@@ -33,3 +33,15 @@ def move_zeroes_end(nums):
             j+=1
     return nums
 print(move_zeroes_end([1,0,2,0,3]))
+def move_zeroes_to_end(nums):
+    j=0
+    for i in range(len(nums)):
+        if nums[i]==0:
+            j=i
+            break
+    for i in range(j+1,len(nums)):
+        if nums[i]!=0:
+            nums[i],nums[j]=nums[j],nums[i]
+            j+=1
+    return nums
+print(move_zeroes_to_end([1,0,2,0,3]))
