@@ -14,3 +14,10 @@ def right_rotate(nums,k):
    Output: [4,1,2,3]"""
 print(right_rotate([1,2,3,4,5,6,7],3))
 print(right_rotate([1,2,3,4,5],2))
+def right_rotate(nums,k):
+    k=k%len(nums)
+    nums[:]=reversed(nums[:])
+    nums[:k]=reversed(nums[:k])
+    nums[k:]=reversed(nums[k:])
+    return nums
+print(right_rotate([1,2,3,4,5], 2))
