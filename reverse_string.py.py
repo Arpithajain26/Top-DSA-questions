@@ -20,3 +20,6 @@ print(reverse_string("python"))
 def reverse_string(s):
     return s[::-1]
 print(reverse_string("arpitha"))
+def reverse_string1(s):
+    return "".join(reversed(s))
+print(reverse_string1("arpitha"))
