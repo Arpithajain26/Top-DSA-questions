@@ -12,3 +12,9 @@ def HCF_num(a,b):
             hcf=i
     return hcf
 print(HCF_num(10,20))
+def HCF1(a,b):
+    while a==b:
+        a=max(a,b)-min(a,b)
+        b=max(a,b)-min(a,b)
+    return a
+print(HCF1(30,20))
