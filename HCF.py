@@ -13,8 +13,10 @@ def HCF_num(a,b):
     return hcf
 print(HCF_num(10,20))
 def HCF1(a,b):
-    while a==b:
-        a=max(a,b)-min(a,b)
-        b=max(a,b)-min(a,b)
+    while a!=b:
+        if a>b:
+            a=a-b
+        else:
+            b=b-a
     return a
-print(HCF1(30,20))
+print(HCF1(10,20))
