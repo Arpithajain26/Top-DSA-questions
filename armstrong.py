@@ -38,4 +38,25 @@ def check_anargam1(n):
         sum+=int(i)**len(digit)
     return sum==n
 print(check_anargam1(153))
+
+
+def armstrong_number(n):
+    copy=n
+    count=0
+    temp=n
+    while n!=0:
+        r=n%10
+        n=n//10
+        count+=1
+    sum=0
+    
+    while copy!=0:
+        r=copy%10
+        copy//=10
+        sum+=r**count
+    if sum==temp:
+        print("armstrong number ")
+    else:
+        print("not armstrong")
+armstrong_number(153)
         
