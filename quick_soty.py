@@ -7,7 +7,7 @@ def partition(a, low, high):
     while i < j:
         while a[i] <= pivot and i < high:
             i += 1
-
+  
         while a[j] > pivot:
             j -= 1
 
